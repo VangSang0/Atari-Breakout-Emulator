@@ -19,6 +19,41 @@ canvas{
     image-rendering: pixelated;
 }
 
+/* Overlay styling for the win screen */
+.end-screen {
+    position: fixed; /* makes it stay on top */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent gray overlay */
+    color: white;
+    z-index: 1000;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Optional styling for button */
+.end-screen button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.end-screen button:hover {
+    background-color: #ddd;
+}
+
 
 
 
